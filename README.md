@@ -4,6 +4,8 @@ This library allows you to very easily upload files from a react application to 
 
 The component is completely stateless, so while it functions as a React component, there's no dependency on the React framework for this package.
 
+Actually, this package has no hard dependencies - it does, however, assume you have aws-sdk configured on your express server.
+
 Library was created following the tutorial available on Heroku - https://devcenter.heroku.com/articles/s3-upload-node
 
   - Embed the react component in your application
