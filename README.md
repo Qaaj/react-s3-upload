@@ -24,6 +24,8 @@ Library was created following the tutorial available on Heroku - https://devcent
       onProgress={ (pct) => { console.log(pct) } }
       onComplete={ (url) => { console.log(url) } } />
 
+  - `onProgress` - callback function for XHR onprogress.
+  - `onComplete` - callback function when upload is done.
 
 # Server-Side
 
