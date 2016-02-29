@@ -27,5 +27,10 @@ Library was created following the tutorial available on Heroku - https://devcent
 
 # Server-Side
 
-    app.get('/sign_s3',
-            require('react-s3-upload/S3Sign')({S3_BUCKET:'bucket'}));
+     app.get('/sign_s3', require('react-s3-upload/S3Sign')({
+        S3_BUCKET:'unilever-digitaldata-develop', 
+        unique: false
+      }));
+
+`unique` - generate a unique filename for your upload or not.
+`S3_BUCKET` - the name of your Amazon S3 bucket.
