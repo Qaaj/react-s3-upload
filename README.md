@@ -30,7 +30,7 @@ Library was created following the tutorial available on Heroku - https://devcent
 # Server-Side
 
      app.get('/sign_s3', require('react-s3-upload/S3Sign')({
-        S3_BUCKET:'unilever-digitaldata-develop', 
+        S3_BUCKET:'your_bucket', 
         unique: false
       }));
 
