@@ -3,10 +3,8 @@ var aws = require('aws-sdk');
 
 module.exports = function (options) {
 
-  aws.config.region = 'eu-central-1'; // central-1 == frankfurt
-  aws.config.accessKeyId = process.env.AMAZON_ID_KEY;
-  aws.config.secretAccessKey = process.env.AMAZON_SECRET_KEY;
-
+  // MAKE SURE YOUR AMAZON SDK IS CONFIGURED
+  
   return (req,res,next) => {
 
     var s3 = new aws.S3();
