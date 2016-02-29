@@ -23,7 +23,7 @@
     "url": "https://github.com/Qaaj/react-s3-upload/issues"
   },
   "homepage": "https://github.com/Qaaj/react-s3-upload#readme",
-  "dependencies": {
+  "devDependencies": {
     "babel-cli": "^6.5.1",
     "babel-preset-es2015": "6.3.13",
     "babel-preset-react": "6.3.13"

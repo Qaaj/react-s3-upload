@@ -19,7 +19,7 @@ module.exports = function (options) {
         s4() + '-' + s4() + s4() + s4();
     }
 
-    if(options.unique) filename = filename + '-' + guid();
+    if(options.unique) filename = guid() + '-' + filename;
 
     console.log(options.unique,filename,guid());
 
