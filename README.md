@@ -32,5 +32,5 @@ Library was created following the tutorial available on Heroku - https://devcent
         unique: false
       }));
 
-`unique` - generate a unique filename for your upload or not.
-`S3_BUCKET` - the name of your Amazon S3 bucket.
+  - `unique` - generate a unique filename for your upload or not.
+  - `S3_BUCKET` - the name of your Amazon S3 bucket.
