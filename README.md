@@ -2,6 +2,8 @@
 
 This library allows you to very easily upload files from a react application to Amazon S3, using express for authing with S3 and signing.
 
+The component is complete stateless, so while it functions as a React component, there's no dependency on the React framework for this package.
+
 Library was created following the tutorial available on Heroku - https://devcenter.heroku.com/articles/s3-upload-node
 
   - Embed the react component in your application
@@ -16,8 +18,10 @@ Library was created following the tutorial available on Heroku - https://devcent
 
     import ReactUpload from 'react-s3-upload';
 
-    <ReactUpload />
-
+    <ReactUpload 
+    	onProgress={ (pct) => { console.log(pct) } }
+        onComplete={ (url) => { console.log(url) } }
+    />
 
 
 # Server-Side
