@@ -6,7 +6,7 @@ Library was created following the tutorial available on Heroku - https://devcent
 
   - Embed the react component in your application
   - Set up your express server
-  - Magic ensues
+  - Magic
 
 # Installation
 
