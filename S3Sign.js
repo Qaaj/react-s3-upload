@@ -3,8 +3,6 @@ var aws = require('aws-sdk');
 
 module.exports = function (options) {
 
-  // MAKE SURE YOUR AMAZON SDK IS CONFIGURED
-  
   return (req,res,next) => {
 
     var s3 = new aws.S3();
