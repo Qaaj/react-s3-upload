@@ -17,6 +17,8 @@ function ReactS3Upload(props){
     else{
       sign_and_upload({file, progress_handler:props.onProgress}).then( (URL) => {
         if(props.onProgress) props.onComplete(URL);
+      }).catch( (err) =>{
+        console.error("Something went wrong: " + err);
       });
     }
   }
