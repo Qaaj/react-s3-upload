@@ -1,6 +1,6 @@
 {
   "name": "react-s3-upload",
-  "version": "0.1.4",
+  "version": "0.1.41",
   "description": "Easily upload files through S3 with minimal configuration",
   "main": "index.js",
   "scripts": {
