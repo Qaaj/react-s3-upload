@@ -20,9 +20,7 @@ module.exports = function (options) {
     }
 
     if(options.unique) filename = guid() + '-' + filename;
-
-    console.log(options.unique,filename,guid());
-
+    
     var s3_params = {
       Bucket: options.S3_BUCKET,
       Key: filename,
