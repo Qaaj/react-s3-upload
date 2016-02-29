@@ -1,0 +1,29 @@
+{
+  "name": "react-s3-upload",
+  "version": "0.0.1",
+  "description": "React component that allows uploads to S3 with a progressbar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "babel -d lib/ src/",
+    "prepublish": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qaaj/react-s3-upload.git"
+  },
+  "keywords": [
+    "react",
+    "s3",
+    "amazon"
+  ],
+  "author": "Jan Jorissen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Qaaj/react-s3-upload/issues"
+  },
+  "homepage": "https://github.com/Qaaj/react-s3-upload#readme",
+  "dependencies": {
+    "babel-cli": "^6.5.1"
+  }
+}
