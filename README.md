@@ -19,11 +19,11 @@ Library was created following the tutorial available on Heroku - https://devcent
     import ReactUpload from 'react-s3-upload';
 
     <ReactUpload 
-    	onProgress={ (pct) => { console.log(pct) } }
-        onComplete={ (url) => { console.log(url) } }
-    />
+      onProgress={ (pct) => { console.log(pct) } }
+      onComplete={ (url) => { console.log(url) } } />
 
 
 # Server-Side
 
-    app.get('/sign_s3', require('react-s3-upload/S3Sign')({S3_BUCKET:'your_s3_bucket'}));
+    app.get('/sign_s3',
+            require('react-s3-upload/S3Sign')({S3_BUCKET:'bucket'}));
