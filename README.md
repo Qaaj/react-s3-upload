@@ -8,8 +8,7 @@ Library was created following the tutorial available on Heroku - https://devcent
   - Set up your express server
   - Magic ensues
 
-  Install
------------
+# Installation
 
     $ npm install react-s3-upload
 
@@ -17,9 +16,7 @@ Library was created following the tutorial available on Heroku - https://devcent
 
     import ReactUpload from 'react-s3-upload';
 
-    ...
-
-     <ReactUpload />
+    <ReactUpload />
 
 
 
