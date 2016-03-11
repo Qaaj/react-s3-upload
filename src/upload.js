@@ -1,8 +1,8 @@
 
-export function sign_and_upload({file, progress_handler}){
+export function sign_and_upload({file, progress_handler,folder}){
   return new Promise( (resolve,reject) => {
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "/sign_s3?file_name="+file.name+"&file_type="+file.type);
+    xhr.open("GET", "/sign_s3?file_name="+file.name+"&file_type="+file.type+"&folder="+folder);
     xhr.onreadystatechange = () => {
       if(xhr.readyState === 4){
         if(xhr.status === 200){

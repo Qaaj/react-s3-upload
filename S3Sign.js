@@ -8,6 +8,7 @@ module.exports = function (options) {
     var s3 = new aws.S3();
 
     var filename = req.query.file_name;
+    var folder = req.query.folder;
 
     var guid = function(){
       function s4() {
@@ -20,7 +21,8 @@ module.exports = function (options) {
     }
 
     if(options.unique) filename = guid() + '-' + filename;
-    
+    if(folder) filename = folder + '/' + filename;
+
     var s3_params = {
       Bucket: options.S3_BUCKET,
       Key: filename,

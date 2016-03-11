@@ -15,7 +15,7 @@ function ReactS3Upload(props){
       console.error("No file selected.");
     }
     else{
-      sign_and_upload({file, progress_handler:props.onProgress}).then( (URL) => {
+      sign_and_upload({file, progress_handler:props.onProgress, folder:props.folder}).then( (URL) => {
         if(props.onProgress) props.onComplete(URL);
       }).catch( (err) =>{
         console.error("Something went wrong: " + err);
