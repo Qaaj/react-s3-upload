@@ -22,10 +22,12 @@ Library was created following the tutorial available on Heroku - https://devcent
 
     <ReactUpload 
       onProgress={ (pct) => { console.log(pct) } }
-      onComplete={ (url) => { console.log(url) } } />
+      onComplete={ (url) => { console.log(url) } }
+      folder="uploads" />
 
   - `onProgress` - callback function for XHR onprogress.
   - `onComplete` - callback function when upload is done.
+  - `folder` - [optional] folder in your bucket where the file will be uploaded to.
 
 # Server-Side
 
@@ -34,5 +36,5 @@ Library was created following the tutorial available on Heroku - https://devcent
         unique: false
       }));
 
-  - `unique` - generate a unique filename for your upload or not.
+  - `unique` - [optional] generate a unique filename for your upload or not.
   - `S3_BUCKET` - the name of your Amazon S3 bucket.
